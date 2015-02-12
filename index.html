@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Ember &hearts; Facebook</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/ember.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -41,339 +41,388 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
+					<h1>Ember &hearts; Facebook</h1>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small><a href="http://hbrysiewicz.github.io">Heather Brysiewicz</a> / <a href="http://twitter.com/caligoanimus">@caligoanimus</a></small>
 					</p>
 				</section>
 
 				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
+					<h3>Outline</h3>
+					<div class='left'>
+						<p>1. Initialize Facebook JavaScript SDK</p>
+						<p>2. Send Dialog Component</p>
+						<p>3. Authenticate Component</p>
+					</div>
 				</section>
 
 				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
+					<h3>Preamble!</h3>
+					<div class='left' style="width:70%">
+						<p>1. I am not a Facebook Expert (... who is?)</p>
+						<p>2. Buuut...? Because Facebook</p>
+					</div>
 				</section>
 
 				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
+					<h3>Create an App in Facebook</h3>
+					<img src="img/create-fbapp.png">
 				</section>
 
 				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
+					<h3>Create an Ember App</h3>
+					<img src="img/create-emberapp.png" height=600>
 				</section>
 
 				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
+					<h3>1. Initialize Facebook JavaScript SDK</h3>
+					<p><a class='small' href='http://hbrysiewicz.github.io/2014-12-16-ember-facebook-components.html'>ember facebook components post</a></p>
 				</section>
 
 				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+					<div class='left' style="width: 100%">
+						<p><strong>Initializers:</strong> allow you to run setup for your app</p>
+						<p><strong>Examples:</strong> registering and injecting services such as sessions, google analytics &amp; other third party SDKS</p>
+					</div>
 				</section>
 
 				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+					<pre><code data-trim>
+/* global FB */
+export default {
+  name: 'facebook',
 
-    var nodes = document.querySelectorAll( selector );
+  initialize: function() {
+    var fbAsyncInit = function() {
+      FB.init({
+        appId      : "801296653273082",
+        xfbml      : true,
+        version    : 'v2.2'
+      });
+    };
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
 
-      if( !node.className ) {
-        node.className += ' roll';
-      }
+    window.fbAsyncInit = fbAsyncInit;
+  }
+};
+					</code></pre>
+				</section>
+
+				<section>
+					<h3 class='strikethrough'>1. Initialize Facebook JavaScript SDK</h3>
+				</section>
+
+				<section>
+					<h3>2. Send Dialog Component</h3>
+				</section>
+
+				<section>
+					<p><img src='img/invite-button.png' width="40%"></p>
+					<p><img src="img/invite-ui.png" width="60%"></p>
+					<p><a class='small' href="https://developers.facebook.com/docs/sharing/reference/send-dialog">facebook docs - javascript sdk UI - send dialog</a></p>
+				</section>
+
+				<section>
+					<pre><code data-trim>
+/* global FB */
+import Ember from "ember";
+
+export default Ember.Component.extend({
+  actions: {
+    invite: function() {
+      FB.ui({
+        method: "send",
+        link: this.get("url"),
+      });
     }
   }
-}
+});
 					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+					<p><img src="img/invite-hbs.png" width="80%"></p>
+					<p> <a class='small' href="https://developers.facebook.com/docs/javascript/reference/FB.ui/">facebook docs - javascript sdk UI reference</a> </p>
 				</section>
 
 				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
+					<h3 class='strikethrough'>2. Send Dialog Component</h3>
 				</section>
 
 				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
+					<h3>3. Authenticate Component</h3>
 				</section>
 
 				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							<tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							<tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							<tr>
-						</tbody>
-					</table>
+					<p><img src='img/sign-up-button.png' width="40%"></p>
+					<p><img src="img/permission.png" width="60%"></p>
+					<p><a class='small' href="https://developers.facebook.com/docs/facebook-login/login-flow-for-web/v2.2">facebook docs - javascript sdk UI - send dialog</a></p>
 				</section>
 
 				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
+					<h3>Facebook says</h3>
+					<div class='left' style="width:100%;font-size:24px">
+						<p><strong>1.</strong> Checking the login status to see if someone's already logged into your app.</p>
+						<p><strong>2.</strong> If they are not logged in, invoke the login dialog and ask for a set of data permissions.</p>
+						<p><strong>3.</strong> Verify their identity.</p>
+						<p><strong>4.</strong> Store the resulting access token.</p>
+						<p><strong>5.</strong> Make API calls.</p>
+						<p><strong>6.</strong> Log out.</p>
+					</div>
 				</section>
 
 				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+					<pre><code data-trim style="overflow-y:scroll;height:600px">
+/* global FB */
+import Ember from 'ember';
 
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
+export default Ember.Component.extend({
+  getLoginStatus: function() {
+    return new Ember.RSVP.Promise(function(resolve, reject) {
+      FB.getLoginStatus(function(response) {
+        if (response.status) {
+          resolve(response.status);
+        } else {
+          reject();
+        }
+      });
+    });
+  },
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+  getAccessToken: function() {
+    return new Ember.RSVP.Promise(function(resolve, reject) {
+      FB.login(function(response) {
+        if (response.authResponse) {
+          resolve(response.authResponse.accessToken);
+        } else {
+          reject(response);
+        }
+      }, { scope: 'email,user_birthday,publish_actions' });
+    });
+  },
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
+  getAccountAttributes: function() {
+    var self = this;
 
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
+    return new Ember.RSVP.Promise(function(resolve, reject) {
+      FB.api('/me', function(response) {
+        if (!response || response.error || Ember.isEmpty(response.email)) {
+          reject("An error occured or priveleges required to sign up were not granted.");
+        } else {
+          resolve(response);
+        }
+      }, { scope: 'email,user_birthday,publish_actions' });
+    });
+  },
 
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
+  authenticate: function(accessToken) {
+    var self = this;
+    var token = Ember.$('meta[name="csrf-token"]').attr('content');
+
+    return self.getAccountAttributes().then(function(accountAttributes) {
+      return Ember.$.ajax({
+        url: '/api/v1/session/oauth2/facebook/callback',
+        data: {
+          token: accessToken,
+          account_attributes: accountAttributes
+        },
+        type: 'post',
+        headers: { "X-CSRF-Token": token }
+      });
+    });
+  },
+
+  actions: {
+    authorize: function() {
+      var self = this;
+
+      this.getLoginStatus().then(function() {
+        self.getAccessToken().then(function(accessToken) {
+          self.authenticate(accessToken).then(function(user) {
+            self.sendAction('success', user);
+          }, function(reason) {
+            self.sendAction('failure', reason);
+          });
+        });
+      });
+    }
+  }
+});
 					</code></pre>
 				</section>
 
 				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
+					<pre><code data-trim>
+  actions: {
+    authorize: function() {
+      var self = this;
+
+      this.getLoginStatus().then(function() {
+        self.getAccessToken().then(function(accessToken) {
+          self.authenticate(accessToken).then(function(user) {
+            self.sendAction('success', user);
+          }, function(reason) {
+            self.sendAction('failure', reason);
+          });
+        });
+      });
+    }
+  }
+					</code></pre>
 				</section>
 
 				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
+					<h3>Facebook says</h3>
+					<div class='left' style="width:100%;font-size:24px">
+						<p class='focussed'><strong>1.</strong> Checking the login status to see if someone's already logged into your app.</p>
+						<p class='faded'><strong>2.</strong> If they are not logged in, invoke the login dialog and ask for a set of data permissions.</p>
+						<p class='faded'><strong>3.</strong> Verify their identity.</p>
+						<p class='faded'><strong>4.</strong> Store the resulting access token.</p>
+						<p class='faded'><strong>5.</strong> Make API calls.</p>
+						<p class='faded'><strong>6.</strong> Log out.</p>
+					</div>
 				</section>
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
+				<section>
+					<h3>getLoginStatus()</h3>
+					<pre><code data-trim>
+getLoginStatus: function() {
+  return new Ember.RSVP.Promise(function(resolve, reject) {
+    FB.getLoginStatus(function(response) {
+      if (response.status) {
+        resolve(response.status);
+      } else {
+        reject();
+      }
+    });
+  });
+},
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>Facebook says</h3>
+					<div class='left' style="width:100%;font-size:24px">
+						<p class='faded'><strong>1.</strong> Checking the login status to see if someone's already logged into your app.</p>
+						<p class='focussed'><strong>2.</strong> If they are not logged in, invoke the login dialog and ask for a set of data permissions.</p>
+						<p class='faded'><strong>3.</strong> Verify their identity.</p>
+						<p class='faded'><strong>4.</strong> Store the resulting access token.</p>
+						<p class='faded'><strong>5.</strong> Make API calls.</p>
+						<p class='faded'><strong>6.</strong> Log out.</p>
+					</div>
+				</section>
+
+				<section>
+					<h3>getAccessToken()</h3>
+					<pre><code data-trim>
+getAccessToken: function() {
+  return new Ember.RSVP.Promise(function(resolve, reject) {
+    FB.login(function(response) {
+      if (response.authResponse) {
+        resolve(response.authResponse.accessToken);
+      } else {
+        reject(response);
+      }
+    }, { scope: 'email,user_birthday,publish_actions' });
+  });
+},
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>Facebook says</h3>
+					<div class='left' style="width:100%;font-size:24px">
+						<p class='faded'><strong>1.</strong> Checking the login status to see if someone's already logged into your app.</p>
+						<p class='faded'><strong>2.</strong> If they are not logged in, invoke the login dialog and ask for a set of data permissions.</p>
+						<p class='focussed'><strong>3.</strong> Verify their identity.</p>
+						<p class='faded'><strong>4.</strong> Store the resulting access token.</p>
+						<p class='faded'><strong>5.</strong> Make API calls.</p>
+						<p class='faded'><strong>6.</strong> Log out.</p>
+					</div>
+				</section>
+
+				<section>
+					<h3>authenticate()</h3>
+					<pre><code data-trim>
+authenticate: function(accessToken) {
+  var self = this;
+
+  return self.getAccountAttributes().then(function(accountAttributes) {
+    return Ember.$.ajax({
+      url: '/api/v1/session/oauth2/facebook/callback',
+      data: {
+        token: accessToken,
+        account_attributes: accountAttributes
+      },
+      type: 'post'
+    });
+  });
+},
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>getAccountAttributes()</h3>
+					<pre><code data-trim>
+getAccountAttributes: function() {
+  var self = this;
+
+  return new Ember.RSVP.Promise(function(resolve, reject) {
+    FB.api('/me', function(response) {
+      if (!response || response.error || Ember.isEmpty(response.email)) {
+        reject("An error occured or priveleges required to sign up were not granted.");
+      } else {
+        resolve(response);
+      }
+    }, { scope: 'email,user_birthday,publish_actions' });
+  });
+},
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>Facebook says</h3>
+					<div class='left' style="width:100%;font-size:24px">
+						<p class='faded'><strong>1.</strong> Checking the login status to see if someone's already logged into your app.</p>
+						<p class='faded'><strong>2.</strong> If they are not logged in, invoke the login dialog and ask for a set of data permissions.</p>
+						<p class='faded'><strong>3.</strong> Verify their identity.</p>
+						<p class='focussed'><strong>4.</strong> Store the resulting access token.</p>
+						<p class='faded'><strong>5.</strong> Make API calls.</p>
+						<p class='faded'><strong>6.</strong> Log out.</p>
+					</div>
+				</section>
+
+				<section>
+					<h3>Facebook says</h3>
+					<div class='left' style="width:100%;font-size:24px">
+						<p class='faded'><strong>1.</strong> Checking the login status to see if someone's already logged into your app.</p>
+						<p class='faded'><strong>2.</strong> If they are not logged in, invoke the login dialog and ask for a set of data permissions.</p>
+						<p class='faded'><strong>3.</strong> Verify their identity.</p>
+						<p class='faded'><strong>4.</strong> Store the resulting access token.</p>
+						<p class='focussed'><strong>4+.</strong> Request extended token on the server side</p>
+						<p class='faded'><strong>5.</strong> Make API calls.</p>
+						<p class='faded'><strong>6.</strong> Log out.</p>
+					</div>
+				</section>
+
+				<section>
+					<h3>Extended Token</h3>
+					<div class='left' style="width:40%">
+						<p>1. Last ~60 days</p>
+						<p>2. Publish Actions</p>
+						<p>3. Post to feed</p>
+					</div>
+				</section>
+
+				<section>
+					<h4>Thoughts and Questions</h4>
 				</section>
 
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
